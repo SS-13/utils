@@ -27,3 +27,4 @@ const obj = {
   hello: "world",
 };
 console.log(mandatoryTypeCheck(obj, "a"));
+
