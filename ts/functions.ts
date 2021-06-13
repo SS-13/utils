@@ -28,3 +28,15 @@ const obj = {
 };
 console.log(mandatoryTypeCheck(obj, "a"));
 
+/**
+ * 检查属性是否在对象中
+ * @param obj
+ * @param key
+ * @returns
+ */
+function hasKey<O extends Record<string, any>>(
+  obj: O,
+  key: keyof any
+): key is keyof O {
+  return obj.hasOwnProperty(key);
+}
